@@ -1,9 +1,9 @@
 import * as functions from 'firebase-functions';
+import app from "./express_config/express";
 
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-// export const helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+//debating if this is the best way to go about it
+import { harsha_srikara } from "./api/harsha_srikara";
+
+app.get("/harsha-srikara", harsha_srikara);
+
+export const api = functions.https.onRequest(app);
