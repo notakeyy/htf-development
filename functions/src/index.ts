@@ -1,9 +1,11 @@
 import * as functions from 'firebase-functions';
-import app from "./express_config/express";
+import express from "express";
+import cors from "cors";
+const app = express();
+app.use(cors({ origin: true }));
 
-//debating if this is the best way to go about it
-import { harsha_srikara } from "./api/harsha_srikara";
+import { first_last } from "./api/template";
 
-app.get("/harsha-srikara", harsha_srikara);
+app.get("/first-last", first_last);
 
 export const api = functions.https.onRequest(app);

@@ -1,1 +1,0 @@
-export const BASE_URL = "http://localhost:5002/acm-core/us-central1/challenge/htf-development/";
