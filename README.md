@@ -5,7 +5,7 @@
 
 #### Overview
 
-Access workshop content at [TrackIT](https://trackit.acmutd.co) & use code `htf-development`
+Access workshop content at [TrackIT](https://trackit.acmutd.co) & use code `HTF Development`
 
 #### Technologies
 
@@ -20,7 +20,7 @@ A lotta things
 ### Deployment
 After your pull request is approved, you'll be able to see the finished product...
 
-`curl something something tbd`
+`curl https://us-central1-htf-development.cloudfunctions.net/api/first-last`
 
 Response =>
 ```
