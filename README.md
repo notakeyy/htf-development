@@ -7,22 +7,20 @@
 
 Access workshop content at [TrackIT](https://trackit.acmutd.co) & use code `HTF Development`
 
-#### Technologies
-
 #### What You'll Learn
 
-A lotta things
- - Node
+By the end of this workshop, you will have a good understanding of the following concepts:
+ - Node.js
  - Express
  - Serverless
  - Cloud functions
 
 ### Deployment
-After your pull request is approved, you'll be able to see the finished product...
+After your pull request is approved, your endpoint will be added to our API! You can make a request with the following  command:
 
 `curl https://us-central1-htf-development.cloudfunctions.net/api/first-last`
 
-Response =>
+Example Response =>
 ```
 {
     "discord": "harshasrikara#2033",
