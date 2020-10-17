@@ -27,8 +27,9 @@ export const first_last = async (request: Request, response: Response): Promise<
     const data = {
         email: "harshasrikara@gmail.com"
     }
-    const result = await (await axios.default.post(baseurl, data)).data;
+    const result = await axios.default.post(baseurl, data);
+    const res = result.data;
     response.json({
-        result: result
+        result: res
     });
 }
