@@ -12,10 +12,6 @@ export const hello_first = async (request: Request, response: Response): Promise
      * If the request is localhost:3000/hello-first-last/harsha then
      * request.params.name is harsha
      */
-    const name = request.params.name; 
-    response.json({
-        message: `Hello ${name}`
-    });
 }
 
 /**
