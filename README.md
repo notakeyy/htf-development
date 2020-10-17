@@ -1,11 +1,31 @@
-# [Workshop Name Here]
-**Part of ACM Hacktoberfest 2020*
+# Build an API
+**_ACM_ Hacktoberfest 2020**
 
-## Overview
+**_ACM Development_**
 
-### Technologies
+#### Overview
 
-### What You'll Learn
+Access workshop content at [TrackIT](https://trackit.acmutd.co) & use code `HTF Development`
 
-## Deployment
-After your pull request is approved, you'll be able to see the finished product...
+#### What You'll Learn
+
+By the end of this workshop, you will have a good understanding of the following concepts:
+ - Node.js
+ - Express
+ - Serverless
+ - Cloud functions
+
+### Deployment
+After your pull request is approved, your endpoint will be added to our API! You can make a request with the following  command:
+
+`curl https://us-central1-htf-development.cloudfunctions.net/api/first-last`
+
+Example Response =>
+```
+{
+    "discord": "harshasrikara#2033",
+    "name": "Harsha Srikara",
+    "email": "harsha.srikara@acmutd.com",
+    "points": 0
+}
+```
